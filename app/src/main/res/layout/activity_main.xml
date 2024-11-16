@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Código Combustivel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etCodCombustivel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cód. Combustivel"
+            android:inputType="number"/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btPesquisar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pesquisar"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cidade Abastecimento" />
+
+    <EditText
+        android:id="@+id/etCidadeAbastecimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cidade Abastecimento"
+        android:inputType="text"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quantidade de Litros"/>
+
+    <EditText
+        android:id="@+id/etQtdLitros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cidade Abastecimento"
+        android:inputType="numberSigned"/>
+
+    <Button
+        android:id="@+id/btIncluirRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Incluir Registro"/>
+    
+</LinearLayout>
