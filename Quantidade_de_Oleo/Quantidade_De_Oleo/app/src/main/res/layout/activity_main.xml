@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qtde. Gasolina:"/>
+
+        <EditText
+            android:id="@+id/etQtdeGasolina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proporção:"/>
+
+        <EditText
+            android:id="@+id/etProporcao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Ex.: 40:1"
+            android:inputType="numberDecimal"/>
+
+        <Button
+            android:id="@+id/btConsultarTabela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONSULTAR TABELA"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULAR QTDE. ÓLEO"
+
+</LinearLayout>
